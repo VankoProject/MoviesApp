@@ -19,5 +19,4 @@ interface MovieListRepository {
 
     fun searchMovieByTitle(title: String): MovieInfo
 
-
 }

@@ -42,19 +42,15 @@ class DashBoardFragment : Fragment(R.layout.fragment_dash_board) {
                 findNavController().navigate(R.id.action_dashBoardFragment_to_detailFragment)
             }
 
-
         }
         viewModel.moviePopularList.observe(viewLifecycleOwner) {
             adapter.submitList(it)
 
         }
 
-
-
         recyclerView = binding.rvMoviesList
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
         recyclerView.adapter = adapter
         binding.rvMoviesList.itemAnimator = null
-
     }
 }

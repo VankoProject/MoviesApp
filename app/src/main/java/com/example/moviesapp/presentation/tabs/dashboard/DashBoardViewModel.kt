@@ -12,7 +12,7 @@ class DashBoardViewModel(application: Application) : AndroidViewModel(applicatio
 
    private val repository = MovieListRepositoryImpl(application)
    private val getMovieListUseCase = GetMovieListUseCase(repository)
-    private val loadDataUseCase = LoadDataUseCase(repository)
+   private val loadDataUseCase = LoadDataUseCase(repository)
 
    val moviePopularList = getMovieListUseCase()
 
@@ -21,20 +21,5 @@ class DashBoardViewModel(application: Application) : AndroidViewModel(applicatio
             loadDataUseCase.loadData()
         }
     }
-
-
-//    var testMovies: MutableLiveData<Response<TestListModel>> = MutableLiveData()
-//
-//    init {
-//        getTestMovies()
-//    }
-//
-//    fun getTestMovies() {
-//        viewModelScope.launch {
-//            testMovies.value = testRepository.getMovies()
-//        }
-//
-//    }
-
 
 }

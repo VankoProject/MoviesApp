@@ -8,7 +8,6 @@ import androidx.navigation.ui.NavigationUI
 import com.example.moviesapp.R
 import com.example.moviesapp.databinding.FragmentTabsBinding
 
-
 class TabsFragment : Fragment(R.layout.fragment_tabs) {
 
     private lateinit var binding: FragmentTabsBinding
@@ -21,9 +20,6 @@ class TabsFragment : Fragment(R.layout.fragment_tabs) {
         val navController = navHost.navController
 
         NavigationUI.setupWithNavController(binding.bottomNavMenu, navController)
-
-
     }
-
 
 }
