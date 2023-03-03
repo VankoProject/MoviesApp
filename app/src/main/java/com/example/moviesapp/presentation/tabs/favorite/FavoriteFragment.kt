@@ -16,5 +16,4 @@ class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
         binding = FragmentFavoriteBinding.bind(view)
     }
 
-
 }

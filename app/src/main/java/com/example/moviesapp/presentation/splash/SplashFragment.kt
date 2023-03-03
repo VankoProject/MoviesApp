@@ -26,9 +26,6 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         }
     }
 
-
-
-
     private fun isSignIn(isSignIn: Boolean) {
         TODO()
     }

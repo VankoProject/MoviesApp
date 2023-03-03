@@ -4,7 +4,6 @@ import retrofit2.Response
 
 abstract class BaseApiResponse {
 
-
     suspend fun <T> saveApiCall(api: suspend () -> Response<T>): NetworkResult<T> {
         try {
             val response = api()

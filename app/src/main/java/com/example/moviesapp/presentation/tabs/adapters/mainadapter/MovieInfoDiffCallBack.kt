@@ -5,7 +5,6 @@ import com.example.moviesapp.domain.model.MovieInfo
 
 object MovieInfoDiffCallBack: DiffUtil.ItemCallback<MovieInfo>() {
 
-
     override fun areItemsTheSame(oldItem: MovieInfo, newItem: MovieInfo): Boolean {
         return oldItem.id == newItem.id
     }
@@ -13,6 +12,5 @@ object MovieInfoDiffCallBack: DiffUtil.ItemCallback<MovieInfo>() {
     override fun areContentsTheSame(oldItem: MovieInfo, newItem: MovieInfo): Boolean {
         return oldItem == newItem
     }
-
 
 }
