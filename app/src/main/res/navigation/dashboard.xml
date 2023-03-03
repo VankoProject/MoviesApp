@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dashboard"
+    android:label="Popular movies"
     app:startDestination="@id/dashBoardFragment">
 
     <fragment
         android:id="@+id/dashBoardFragment"
         android:name="com.example.moviesapp.presentation.tabs.dashboard.DashBoardFragment"
         android:label="fragment_dash_board"
-        tools:layout="@layout/fragment_dash_board" >
+        tools:layout="@layout/fragment_dash_board">
         <action
             android:id="@+id/action_dashBoardFragment_to_detailFragment"
             app:destination="@id/detailFragment" />

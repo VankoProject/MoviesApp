@@ -19,6 +19,7 @@ class TabsFragment : Fragment(R.layout.fragment_tabs) {
 
         val navHost = childFragmentManager.findFragmentById(R.id.tabsFragmentContainer) as NavHostFragment
         val navController = navHost.navController
+
         NavigationUI.setupWithNavController(binding.bottomNavMenu, navController)
 
 

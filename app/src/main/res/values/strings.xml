@@ -13,4 +13,6 @@
     <string name="create_account">create account</string>
     <string name="registration">Registration</string>
     <string name="password">Password</string>
+    <string name="poster_of_the_film">Poster of the film</string>
+    <string name="release_date">Release Date:</string>
 </resources>
